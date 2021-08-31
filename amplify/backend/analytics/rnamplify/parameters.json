@@ -1,0 +1,21 @@
+{
+    "appName": "rnamplify",
+    "roleName": "pinpointLambdaRole939824bb",
+    "cloudformationPolicyName": "cloudformationPolicy939824bb",
+    "cloudWatchPolicyName": "cloudWatchPolicy939824bb",
+    "pinpointPolicyName": "pinpointPolicy939824bb",
+    "authPolicyName": "pinpoint_amplify_939824bb",
+    "unauthPolicyName": "pinpoint_amplify_939824bb",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

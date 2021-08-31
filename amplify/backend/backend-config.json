@@ -1,0 +1,23 @@
+{
+    "auth": {
+        "cognito4711123b": {
+            "service": "Cognito",
+            "serviceType": "managed",
+            "providerPlugin": "awscloudformation"
+        }
+    },
+    "analytics": {
+        "rnamplify": {
+            "service": "Pinpoint",
+            "providerPlugin": "awscloudformation"
+        }
+    },
+    "notifications": {
+        "rnamplify": {
+            "service": "Pinpoint",
+            "channels": [
+                "APNS"
+            ]
+        }
+    }
+}
